@@ -12,4 +12,9 @@ final class CovrController {
     Iterable<?> getEmptyList(){
         return Collections.emptyList();
     }
+
+    @GetMapping("/hello")
+    String getHello(){
+        return "Hey there!";
+    }
 }
